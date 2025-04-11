@@ -1,9 +1,33 @@
 {
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#FDF9F8",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#000000",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#CB013A",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#FBBECB",
+					"name": "Accent",
+					"slug": "accent"
+				}
+			]
+		},
 		"layout": {
-			"contentSize": "620px",
-			"wideSize": "1000px"
+			"contentSize": "50rem",
+			"wideSize": "62.5rem"
 		},
 		"spacing": {
 			"units": [
@@ -16,15 +40,228 @@
 			]
 		},
 		"typography": {
+			"defaultFontSizes": false,
+			"fluid": false,
 			"fontFamilies": [
 				{
-					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-					"name": "System Font",
-					"slug": "system-font"
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/inter/inter-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/inter/inter-800-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "Inter, sans-serif",
+					"name": "Inter",
+					"slug": "inter"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Bricolage Grotesque\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/bricolage-grotesque/bricolage-grotesque-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Bricolage Grotesque\"",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/bricolage-grotesque/bricolage-grotesque-800-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Bricolage Grotesque\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/bricolage-grotesque/bricolage-grotesque-600-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Bricolage Grotesque\", sans-serif",
+					"name": "Bricolage Grotesque",
+					"slug": "bricolage-grotesque"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "1.13rem",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "1.5rem",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"size": "2rem",
+					"slug": "x-large"
 				}
 			]
 		},
 		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"background": {
+			"backgroundAttachment": "fixed",
+			"backgroundImage": {
+				"id": 43,
+				"source": "file",
+				"title": "bg-image",
+				"url": "http://localhost/my_portfolio/wp-content/uploads/2025/04/bg-image.jpg"
+			},
+			"backgroundPosition": "50% 50%",
+			"backgroundSize": "cover"
+		},
+		"blocks": {
+			"core/button": {
+				"variations": {
+					"outline": {
+						"border": {
+							"bottom": {
+								"color": "currentColor",
+								"style": "solid",
+								"width": "2px"
+							},
+							"color": null,
+							"left": {
+								"color": "currentColor",
+								"style": "solid",
+								"width": "2px"
+							},
+							"radius": "16px",
+							"right": {
+								"color": "currentColor",
+								"style": "solid",
+								"width": "2px"
+							},
+							"style": null,
+							"top": {
+								"color": "currentColor",
+								"style": "solid",
+								"width": "2px"
+							},
+							"width": null
+						},
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						},
+						"typography": {
+							"fontSize": "var(--wp--preset--font-size--small)"
+						}
+					}
+				}
+			},
+			"core/buttons": {
+				"border": {
+					"radius": "10px"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"core/heading": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						}
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--contrast)"
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--accent)",
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)",
+					"fontStyle": "normal",
+					"fontWeight": "800"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"bottom": "0rem",
+				"left": "1rem",
+				"right": "1rem",
+				"top": "0rem"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--inter)",
+			"fontSize": "var(--wp--preset--font-size--small)"
+		}
 	},
 	"templateParts": [
 		{
