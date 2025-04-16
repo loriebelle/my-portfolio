@@ -21,3 +21,6 @@ function portfolio_setup() {
     add_editor_style( get_stylesheet_uri() );
 }
 add_action('after_setup_theme', 'portfolio_setup');
+
+// Custom Post Types & Taxonomies
+require get_template_directory() . '/inc/post-types-taxonomies.php';
