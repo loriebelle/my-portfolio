@@ -14,3 +14,6 @@ Text Domain: portfolio-theme
 Update URI: false
 */
 
+.social-icons {
+    justify-content: right;
+}
