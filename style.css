@@ -17,3 +17,20 @@ Update URI: false
 .social-icons {
     justify-content: right;
 }
+
+div.gform-theme--framework .gfield--type-choice .gfield_checkbox, .gform-theme--framework .gfield--type-choice .gfield_radio{
+    flex-direction: row;
+}
+
+div.gform-theme--foundation .gform_fields {
+    grid-row-gap: 1.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #FDF9F8;
+}
