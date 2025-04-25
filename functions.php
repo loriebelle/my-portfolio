@@ -26,3 +26,6 @@ add_action('after_setup_theme', 'portfolio_setup');
 require get_template_directory() . '/inc/post-types-taxonomies.php';
 
 add_filter('show_admin_bar', '__return_false');
+
+// Load custom blocks
+require get_theme_file_path() . '/portfolio-blocks/portfolio-blocks.php';
