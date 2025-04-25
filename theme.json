@@ -56,9 +56,25 @@
 						{
 							"fontFamily": "Inter",
 							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/inter/inter-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
 							"fontWeight": "800",
 							"src": [
 								"file:./assets/fonts/inter/inter-800-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/inter/inter-900-normal.woff2"
 							]
 						}
 					],
@@ -126,12 +142,7 @@
 	"styles": {
 		"background": {
 			"backgroundAttachment": "fixed",
-			"backgroundImage": {
-				"id": 43,
-				"source": "file",
-				"title": "bg-image",
-				"url": "http://localhost/my_portfolio/wp-content/uploads/2025/04/bg-image.jpg"
-			},
+			"backgroundImage": "none",
 			"backgroundPosition": "50% 50%",
 			"backgroundSize": "cover"
 		},
@@ -211,26 +222,26 @@
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--inter)",
-					"fontSize": "var(--wp--preset--font-size--small)"
-				}
-			},
-			"caption": {
-				"color": {
-					"text": "var(--wp--preset--color--contrast)"
-				},
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)",
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontStyle": "normal",
+					"fontWeight": "600"
 				}
 			},
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)"
+					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)",
+					"fontSize": "var(--wp--preset--font-size--x-large)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)"
+					"fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)",
+					"fontSize": "1.8rem"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "1.5rem"
 				}
 			},
 			"heading": {
@@ -245,8 +256,7 @@
 					"text": "var(--wp--preset--color--primary)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)",
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontFamily": "var(--wp--preset--font-family--inter)"
 				}
 			}
 		},
@@ -276,5 +286,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }
