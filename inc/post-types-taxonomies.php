@@ -46,7 +46,7 @@ function portfolio_register_custom_post_types() {
         'show_in_admin_bar'  => true,
         'show_in_rest'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'Projects' ),
+        'rewrite'            => array( 'slug' => 'projects' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
