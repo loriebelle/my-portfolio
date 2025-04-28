@@ -140,12 +140,6 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
-		"background": {
-			"backgroundAttachment": "fixed",
-			"backgroundImage": "none",
-			"backgroundPosition": "50% 50%",
-			"backgroundSize": "cover"
-		},
 		"blocks": {
 			"core/button": {
 				"variations": {
@@ -211,7 +205,6 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
 		"elements": {
