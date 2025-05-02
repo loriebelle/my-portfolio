@@ -12,13 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
   let mouseX = 0, mouseY = 0;
   let ringX = 0, ringY = 0;
 
+  // Update mouse position
   window.addEventListener('mousemove', e => {
     mouseX = e.clientX;
     mouseY = e.clientY;
     cursor.style.transform = `translate(${mouseX - 7}px, ${mouseY - 7}px)`;
   });
-  
-  // Ring
+
+  // Ring animation
   function animate() {
     ringX += (mouseX - ringX) * 0.08; // slower (from 0.15 -> 0.08)
     ringY += (mouseY - ringY) * 0.08;
@@ -26,20 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(animate);
   }
   
-  
   animate();
 
-  // Hover effect
-  const hoverTargets = document.querySelectorAll('a, button, input[type="button"], input[type="submit"]');
+  // Only apply hover effect for images
+  const hoverTargets = document.querySelectorAll('img');
 
   hoverTargets.forEach(el => {
     el.addEventListener('mouseenter', () => {
-      ring.classList.add('hover');
-      cursor.classList.add('hover');
+      // Add light pink color on hover for images
+      ring.classList.add('image-hover');
+      cursor.classList.add('image-hover');
     });
     el.addEventListener('mouseleave', () => {
-      ring.classList.remove('hover');
-      cursor.classList.remove('hover');
+      // Remove light pink color when leaving an image
+      ring.classList.remove('image-hover');
+      cursor.classList.remove('image-hover');
     });
   });
 });

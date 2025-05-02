@@ -41,7 +41,7 @@
 		},
 		"typography": {
 			"defaultFontSizes": false,
-			"fluid": false,
+			"fluid": true,
 			"fontFamilies": [
 				{
 					"fontFace": [
@@ -276,6 +276,11 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
+		},
+		{
+			"area": "header",
+			"name": "other-page-header",
+			"title": "Other-page-header"
 		}
 	],
 	"version": 3,
