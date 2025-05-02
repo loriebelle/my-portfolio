@@ -26,66 +26,79 @@ html {
     scroll-margin-top: 6rem;
 }
 
+#home,
+#about,
+#services,
+#projects {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 body {
     background: #FDF9F8;
 }
 
-/* Small solid core circle */
-.cursor-core {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    background-color: #CB013A;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: background-color 0.3s ease;
-    z-index: 9999;
-    filter: blur(2px);
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-}
+@media (hover: hover) and (pointer: fine) {
 
-/* Larger ring with translucent stroke */
-.cursor-ring {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 36px;
-    height: 36px;
-    border: 2px solid rgba(203, 1, 58, 0.5);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
-    z-index: 99999;
-}
+    /* Small solid core circle */
+    .cursor-core {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        background-color: #CB013A;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.3s ease;
+        z-index: 9999;
+        filter: blur(2px);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
 
-/* Hover effect: bigger ring, stronger color, core changes */
-.cursor-ring.hover {
-    width: 45px;
-    height: 45px;
-    border-color: rgba(203, 1, 58, 0.8);
-}
+    /* Larger ring with translucent stroke */
+    .cursor-ring {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border: 2px solid rgba(203, 1, 58, 0.5);
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+        z-index: 99999;
+    }
 
-.cursor-core.hover {
-    background-color: #E31253;
-    width: 20px;
-    height: 20px;
-}
+    /* Hover effect: bigger ring, stronger color, core changes */
+    .cursor-ring.hover {
+        width: 45px;
+        height: 45px;
+        border-color: rgba(203, 1, 58, 0.8);
+    }
 
-/* Hover effect for images */
-.cursor-ring.image-hover {
-    width: 45px;
-    height: 45px;
-    border-color: #FBBECB;
-}
+    .cursor-core.hover {
+        background-color: #E31253;
+        width: 20px;
+        height: 20px;
+    }
 
-.cursor-core.image-hover {
-    background-color: #FBBECB;
-    width: 20px;
-    height: 20px;
+    /* Hover effect for images */
+    .cursor-ring.image-hover {
+        width: 45px;
+        height: 45px;
+        border-color: #FBBECB;
+    }
+
+    .cursor-core.image-hover {
+        background-color: #FBBECB;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* Header */
@@ -167,6 +180,9 @@ ul.wp-block-navigation__container li {
     font-size: var(--wp--preset--font-size--small) !important;
 }
 
+.wp-block-navigation__responsive-container-close {
+    display: none;
+}
 
 div.wp-block-navigation__responsive-container.is-menu-open {
     overflow: visible;
@@ -225,7 +241,7 @@ div.wp-block-navigation__responsive-container-content .wp-block-buttons {
 
     ul.wp-block-navigation__container.is-responsive.has-text-color.nav-menu,
     div.wp-block-navigation__responsive-container-content {
-        gap: 5rem;
+        gap: 2rem;
     }
 
     ul.wp-block-navigation__container li {
